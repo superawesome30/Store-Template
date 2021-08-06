@@ -51,7 +51,7 @@ CREATE TABLE `contact` (
   `id` int(11) NOT NULL,
   `email` varchar(255) NOT NULL,
   `discord` varchar(255) NOT NULL,
-  `message` varchar(5000) NOT NULL
+  `message` TEXT NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -95,8 +95,8 @@ CREATE TABLE `shop` (
   `order1` int(2) NOT NULL,
   `name` varchar(255) NOT NULL,
   `price` varchar(255) NOT NULL,
-  `images` varchar(1000) NOT NULL,
-  `features` varchar(5000) NOT NULL
+  `images` TEXT NOT NULL,
+  `features` TEXT NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
